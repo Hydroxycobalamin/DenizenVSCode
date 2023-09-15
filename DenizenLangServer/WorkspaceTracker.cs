@@ -76,7 +76,7 @@ namespace DenizenLangServer
 
         public static Uri PathToUri(string path)
         {
-            return new("file:///" + Uri.EscapeDataString(path));
+            return new("file:///" + path);
         }
 
         public static void UpdateWorkspaceData(long updateCounter)
